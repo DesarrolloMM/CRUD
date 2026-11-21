@@ -1,0 +1,58 @@
+# ============================================
+# Variables de entorno (secretos)
+# ============================================
+.env
+.env.*
+!.env.example
+
+# ============================================
+# .NET (backend)
+# ============================================
+backend/**/bin/
+backend/**/obj/
+backend/**/publish/
+*.user
+*.suo
+*.userprefs
+*.DotSettings.user
+.vs/
+TestResults/
+*.log
+
+# ============================================
+# Angular / Node (frontend)
+# ============================================
+frontend/CRUD/node_modules/
+frontend/CRUD/dist/
+frontend/CRUD/.angular/
+frontend/CRUD/out-tsc/
+frontend/CRUD/coverage/
+frontend/CRUD/.sass-cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================
+# Docker
+# ============================================
+# Datos locales de volumenes si se usan bind mounts
+mongo-data/
+data/
+docker-compose.override.yml
+
+# ============================================
+# Editores / IDEs
+# ============================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================
+# Sistema operativo
+# ============================================
+.DS_Store
+Thumbs.db
+desktop.ini
